@@ -1,12 +1,15 @@
-import React from 'react';
 
-import './App.css';
+import AllRoute from './custom/AllRoute';
+
+
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <>
+     <AllRoute/>
+
+
+    </>
   );
 }
 
