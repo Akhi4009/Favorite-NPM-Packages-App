@@ -1,5 +1,5 @@
 <h1> Favorite-NPM-Packages-App</h1>
-h2>Description</h2>
+<h2>Description</h2>
 <p>Favorite-NPM-Packages is the websit where you can search npm package.</p>
 
 <h2>Tech Stacks used in this project</h2>
