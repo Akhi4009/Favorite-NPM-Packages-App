@@ -14,10 +14,11 @@ const Input: React.FC<CustomInputProps> = ({ label, value, onChange }) => {
 
   return (
     <div className="w-80 mx-auto">
-      {label && <label className='block'>{label}</label>}
-      <input type="text" value={value} onChange={handleInputChange} />
+      {label && <label className='block mb-3'>{label}</label>}
+      <input className="border border-gray-300 px-4 py-2 focus:outline-none focus:border-blue-500" type="text" value={value} onChange={handleInputChange}  />
     </div>
   );
 };
+
 
 export default Input;

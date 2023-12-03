@@ -62,6 +62,8 @@ if (storedDataString !== null) {
     localStorage.setItem("data", JSON.stringify(storedData));
     alert("Package added in fav")
 }
+setTextValue("")
+
 }
 
   return (
