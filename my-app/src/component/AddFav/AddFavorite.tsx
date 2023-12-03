@@ -1,25 +1,26 @@
-import {useState,useEffect} from "react"
-import SearchBar from "./SearchBar"
-import {  SearchResultItem } from "../../constant";
+import React, { useState } from 'react';
+import SearchBar from './SearchBar'; 
+import PackageList from './Packages';
+import { SearchResultItem } from '../../constant';
 
-
-
-
-const AddFavorite:React.FC = () => {
-
-    const [searchResults, setSearchResults] = useState<SearchResultItem[]>([]);
+const AddFavorite: React.FC = () => {
+  const [searchResults, setSearchResults] = useState<SearchResultItem[]>([]);
+  
 
   const handleSearch = (results: SearchResultItem[]) => {
-    // Handle the search results, e.g., update state
     setSearchResults(results);
-  };
+    
+  }
   
 
   return (
-    <div className="w-full">
-    <SearchBar onSearch={handleSearch} />
-    </div>
-  )
-}
+    <div className="w-full p-4">
+      <SearchBar onSearch={handleSearch} />
+      <PackageList searchResults={searchResults}  />
 
-export default AddFavorite
+      
+    </div>
+  );
+};
+
+export default AddFavorite;

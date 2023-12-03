@@ -18,7 +18,7 @@ const Home:React.FC = () => {
     <div className=" flex items-center justify-center  align-middle" >
     <div className="text-center border-2 border-gray p-20 w-8/12">
         <p className="m-5 text-sm">You don't have any favs yet. Please add.</p>
-    <Button onClick={handleClick} className="w-28 bg-purple-500 rounded-md p-1 m-1">
+    <Button onClick={handleClick} className="w-28 bg-blue rounded-md p-1 m-1">
         Add fav
     </Button>
     </div>
